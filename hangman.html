@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>Hangman Game</title>
+        <link rel="stylesheet" href="hangman.css">
+        <script src="hangman.js"></script>
+    </head>
+    <body>
+        <div id="result" class="hide">
+            <div class="title" id="rT"></div>
+            <div class="body" id="rM"></div>
+            <div class="button" onclick="newGame()">Try Again?</div>
+        </div>
+        <div id="pGame">
+            <div class="title">HANGMAN</div>
+            <div id="letter"></div>
+            <div id="game">
+                <div class="player">
+                    <div class="playerModel">
+                        <div class="head" data="false" id="pm1"></div>
+                        <div class="body" data="false" id="pm2" l="false" r="false"></div>
+                        <div class="foot" data="false" id="pm3" l="false" r="false"></div>
+                    </div>
+                </div>
+                <div class="stand3" data="false"></div>
+                <div class="stand2" data="false"></div>
+                <div class="stand" data="false"></div>
+                <div class="ground" data="false"></div>
+               <!--  <div class="hintButton" data="false" id="hintButton" onclick="hint()">?</div> -->
+            </div>
+            <div class="hint" id="hint">
+                <div class="body" id="hintText"></div>
+            </div>
+                <div id="keyboard"></div>   
+        </div>
+    </body>
+   
+</html>

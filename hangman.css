@@ -1,0 +1,348 @@
+body {
+  background-color: #bce784;
+  margin: 0;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.button {
+  background: #525174;
+  border-radius: 2px;
+  box-shadow: 0 0 0 5px #513b56;
+  display: table;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 20% auto;
+}
+
+.hide {
+  display: none;
+}
+
+
+#letter {
+  font-size: 22px;
+  height: 30px;
+  margin: 4%;
+  text-align: center;
+}
+
+.l {
+  box-shadow: 0 3px 0 -1px #555;
+  display: inline-block;
+  margin: 1px;
+  height: 20px;
+  text-transform: uppercase;
+  width: 20px;
+}
+
+.ls {
+  box-shadow: 0 0 0 0 #555;
+  width: 10px;
+}
+
+#game {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 220px;
+}
+
+#game .player {
+  left: 53px;
+  position: absolute;
+  top: 90px;
+  height: 130px;
+  width: 75px;
+}
+
+.player .playerModel {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.playerModel .head {
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #000 inset;
+  height: 35px;
+  margin: auto;
+  width: 35px;
+}
+
+.playerModel .head[data="false"] {
+  display: none;
+}
+
+.playerModel .body {
+  background-color: #000;
+  height: 45px;
+  margin: auto;
+  width: 2px;
+}
+
+.playerModel .body[data="false"] {
+  display: none;
+}
+
+.playerModel .body:before, .playerModel .body:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 30px;
+  position: absolute;
+  width: 2px;
+}
+
+.playerModel .body[l="false"]:before, .playerModel .body[r="false"]:after {
+  display: none;
+}
+
+.playerModel .body:before {
+  left: 27px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.playerModel .body:after {
+  right: 26px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.playerModel .foot {
+  background-color: #000;
+  height: 3px;
+  margin: auto;
+  width: 2px;
+}
+
+.playerModel .foot[data="false"] {
+  display: none;
+}
+
+.playerModel .foot:before, .playerModel .foot:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 40px;
+  position: absolute;
+  width: 2px;
+}
+
+.playerModel .foot[l="false"]:before, .playerModel .foot[r="false"]:after {
+  display: none;
+}
+
+.playerModel .foot:before {
+  left: 30px;
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+}
+
+.playerModel .foot:after {
+  right: 29px;
+  transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+}
+
+#game .stand3 {
+  background-color: #000;
+  height: 20px;
+  left: 90px;
+  position: absolute;
+  top: 70px;
+  width: 2px;
+}
+
+#game .stand3[data="false"] {
+  display: none;
+}
+
+#game .stand2 {
+  background-color: #000;
+  border-radius: 5px 0 0 5px;
+  bottom: 180px;
+  height: 5px;
+  position: absolute;
+  right: 45px;
+  width: 95px;
+}
+
+#game .stand2:before {
+  background-color: #000;
+  content: "";
+  left: 50px;
+  height: 5px;
+  position: absolute;
+  top: 17px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 50px;
+}
+
+#game .stand2[data="false"] {
+  display: none;
+}
+
+#game .stand {
+  background-color: #000;
+  bottom: 0;
+  height: 180px;
+  margin: auto;
+  position: absolute;
+  right: 45px;
+  width: 5px;
+}
+
+#game .stand[data="false"] {
+  display: none;
+}
+
+#game .ground {
+  background-color: #000;
+  border-radius: 5px;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 220px;
+}
+
+#game .ground[data="false"] {
+  display: none;
+}
+
+#game .hintButton {
+  background: #ccc;
+  border-radius: 8%;
+  box-shadow: 1px 1px 3px #999;
+  font-weight: bold;
+  padding: 5px 10px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+#game .hintButton[data="false"] {
+  display: none;
+}
+
+#keyboard {
+  background-color: #5dd39e;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  padding: 15px;
+  padding-top: 25px;
+  margin-bottom: 4%;
+  height: 15%;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+
+#hint {
+  border-radius: 2px;
+  box-shadow: 1px 1px 4px #888;
+  background-color: #5dd39e;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  margin-top: 2%; 
+  margin-bottom: 2%;
+  height: 20%;
+  width: 50%;
+  padding: 0 15px;
+  position: relative;
+  right: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+#hint .title .exit {
+  background-color: rgb(252, 238, 45);
+  border-radius: 50%;
+  box-shadow: 1px 1px 4px #888;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+}
+
+
+.b {
+  background: #eee;
+  box-shadow: 1px 1px 1px 0 #ccc;
+  display: inline-block;
+  margin: 4px;
+  padding: 8px;
+  font-size: 16px;
+  text-align: center;
+  height: 9%;
+  width: 6%;
+}
+
+.b[data="false"], .b[data="true"] {
+  color: #555;
+  font-weight: bold;
+}
+
+.b[data="true"] {
+  background: #348aa7;
+}
+
+.b[data="false"] {
+  background: #aaa;
+}
+
+
+#result {
+  background: #5dd39e;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+#result[data="true"] {
+  background: #070;
+}
+
+#result .title {
+  color: #eee;
+  font-size: 48px;
+  margin-top: 15%;
+  text-align: center;
+  text-shadow: 1px 1px 0 #000;
+}
+
+#result .body {
+  color: #fff;
+  margin-top: 30px;
+  text-align: center;
+  text-shadow: 1px 1px 0 #000;
+}
+
+#result .button {
+  background:#525174;
+  border-radius: 2px;
+  box-shadow: 0 0 0 5px #513b56;
+  display: table;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 40px auto;
+  margin-bottom: 0;
+}
