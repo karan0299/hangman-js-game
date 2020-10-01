@@ -1,0 +1,1 @@
+A game to teach JS to newbies.
